@@ -1,0 +1,6 @@
+cmake_minimum_required(VERSION 3.17)
+project(Composite)
+
+set(CMAKE_CXX_STANDARD 17)
+include_directories(PasswordGenerator DigitGenerator SymbolGenerator LetterGenerator CompositeGenerator)
+add_executable(Composite main.cpp PasswordGenerator/IPasswordGenerator.cpp PasswordGenerator/IPasswordGenerator.h DigitGenerator/DigitGenerator.cpp DigitGenerator/DigitGenerator.h SymbolGenerator/SymbolGenerator.cpp SymbolGenerator/SymbolGenerator.h LetterGenerator/LetterGenerator.cpp LetterGenerator/LetterGenerator.h CompositeGenerator/CompositeGenerator.cpp CompositeGenerator/CompositeGenerator.h)
